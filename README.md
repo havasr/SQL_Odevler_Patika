@@ -181,12 +181,60 @@ ________________________________
 
 ## SQL Ödev 07 | GROUP BY | HAVING
 
+1. film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
 
+> ```sql
+> SELECT rating, COUNT(*) FROM film
+> GROUP BY rating;
+
+2. film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+
+> ```sql
+> SELECT replacement_cost, COUNT(*) FROM film
+> GROUP BY replacement_cost
+> HAVING COUNT(*) > 50;
+
+3. customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir?
+
+> ```sql
+> SELECT store_id, COUNT(*) FROM customer
+> GROUP BY store_id;
+
+4. city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+
+> ```sql
+> SELECT country_id, COUNT(*) FROM city 
+> GROUP BY country_id
+> ORDER BY COUNT(*)
+> LIMIT 1;
 
 ________________________________
 
 
 ## SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek"
+
+1. test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+> ```sql
+> 
+
+2. Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+
+
+> ```sql
+> 
+
+3. Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+
+> ```sql
+> 
+
+4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+
+> ```sql
+> 
 
 
 

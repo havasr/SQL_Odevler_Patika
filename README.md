@@ -287,19 +287,23 @@ ________________________________
 > SET name = 'Mike'
 > WHERE id = 6;
 
+> ```sql
 > UPDATE employee
 > SET birthday = '1982-01-06'
 > WHERE id = 42;
 
+> ```sql
 > UPDATE employee
 > SET email = 'hulohu@gmail.com'
 > WHERE id = 34;
 
+> ```sql
 > UPDATE employee
 > SET name = 'Sara',
 >    birthday = '1997-11-05'
 > WHERE id = 11;
 
+> ```sql
 > UPDATE employee
 > SET name = 'Mike',
 >    birthday = '1958-05-01',
@@ -313,15 +317,19 @@ ________________________________
 > DELETE FROM employee
 > WHERE id = 19;
 
+> ```sql
 > DELETE FROM employee
 > WHERE name ='Chad';
 
+> ```sql
 > DELETE FROM employee
 > WHERE name = 'Cosmo' AND birthday = '1973-05-24';
 
+> ```sql
 > DELETE FROM employee
 > WHERE email = 'epolglase4@topsy.com';
 
+> ```sql
 > DELETE FROM employee
 > WHERE id > 45;
 

@@ -336,8 +336,44 @@ ________________________________
 ________________________________
 
 
+## SQL Ödev 09 | INNER JOIN
+
+1.city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+> ```sql
+> SELECT city, country FROM city
+> INNER JOIN country ON city.country_id = country.country_id;
+
+2.customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+> ```sql
+> SELECT first_name, last_name, payment_id FROM customer
+> INNER JOIN payment ON customer.customer_id = payment.customer_id;
+
+3. customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+> ```sql
+> SELECT first_name, last_name, rental_id FROM customer
+> INNER JOIN rental ON customer.customer_id = rental.customer_id;
+
+
+________________________________
+
+## SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN
 
 
 
+________________________________
 
+## SQL Ödev 11 | UNION, INTERSECT ve EXCEPT
+
+
+
+________________________________
+
+## SQL Ödev 12 | Sorgu Senaryoları
+
+
+
+________________________________
 

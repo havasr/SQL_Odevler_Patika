@@ -441,9 +441,11 @@ ________________________________
 4. payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
   
 > ```sql 
-> SELECT customer_id, COUNT(*) AS shopping FROM payment
-> GROUP BY customer_id
+>SELECT customer.first_name, customer.last_name, COUNT(*) AS shopping FROM payment
+> INNER JOIN customer on customer.customer_id = payment.customer_id
+> GROUP BY customer.first_name, customer.last_name
 > ORDER BY shopping DESC;
+
 
   
 ________________________________
